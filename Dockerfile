@@ -23,7 +23,7 @@ RUN mkdir -p /var/log/kerberos
 RUN mkdir -p /etc/security/keytabs/
 RUN touch /var/log/kerberos/kadmind.log
 ADD hadoop-conf/krb5.conf /etc/
-ADD keytabs/keytab_dta/* /etc/security/keytabs/
+ADD keytabs/* /etc/security/keytabs/
 
 #ARG DEBIAN_FRONTEND=noninteractive
 RUN \
